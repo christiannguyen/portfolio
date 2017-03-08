@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css?family=Muli|Lato|Source+Sans+Pro|Poppins|Montserrat|Open+Sans");
+/*
+font-family: 'Libre Baskerville', serif;
+font-family: 'ABeeZee', sans-serif;
+font-family: 'Domine', serif;
+font-family: 'Armata', sans-serif;
+*/
+/* color bank:
+#ECE8EF;
+*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+header.navigation {
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  height: 6vh;
+  width: 100%;
+  background-color: red;
+  z-index: 1;
+}
+
+header .logo{
+  height: 100%;
+}
+header .logo h1{
+  margin: 0;
+  font-size: 1em;
+  line-height: 40px;
+}
+header nav{
+ height: 100%;
+}
+
+#intro {
+  position: relative;
+ overflow: hidden;
+ height: 100vh;
+ padding: 0;
+}
+#intro:before {
+  background:
+    linear-gradient(
+      rgba(0, 130, 160, 0.4), 
+      rgba(0, 130, 160, 0.4)
+    ),url(assets/4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -2;
+  content: " ";
+  position: fixed;
+  will-change: transform;
+  height: 100%;
+  width: 100%;
+}
+
+#intro #name {
+  padding-top: 15%;
+  color: #3f3f3f; }
+
+#intro h1 {
+  text-align: center;
+  font-size: 500%;
+  font-weight: 1100;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 2px; }
+
+#intro h2 {
+  text-align: center;
+  font-size: 150%;
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 2px; }
+
+#intro ul {
+  list-style-type: none;
+  text-align: center; }
+
+#intro ul li {
+  display: inline-block;
+  padding: 10px 17px 0 17px;
+  font-size: 500%; }
+
+#intro ul li i {
+  color: black; }
+
+#intro ul li i:hover {
+  color: #2978A0;
+  -webkit-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  transform: scale(1.15); }
+
+#intro #directory {
+  background-color: #2a2a2a;
+  position: absolute;
+  bottom: 0;
+  height: 80px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 250%;
+  margin: 0; }
+
+#intro #directory .directories-info {
+  padding-top: 15px;
+  padding-left: 0;
+  padding-right: 0; }
+
+#intro #directory a {
+  color: #fafafa;
+  font-family: 'Montserrat', sans-serif; }
+
+#intro #directory .directories-info a:link,
+a:visited {
+  text-decoration: none; }
+
+#intro #directory .directories-info a:hover {
+  color: #a8a8a8;
+  text-decoration: none;
+  cursor: pointer; }
+
+#intro #directory .directories-info a:active {
+  text-decoration: none; }
+
+#intro #directory .sliding-u-l-r a {
+  display: inline-block; }
+
+#intro #directory .sliding-u-l-r a:after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 0;
+  background: transparent;
+  transition: width .6s ease, background-color .6s ease; }
+
+#intro #directory .sliding-u-l-r a:hover:after {
+  width: 100%;
+  background: #d3d3d3; }
+
+/* --------- about me -------- */
+#about-me {
+  background-color: #F9FFF2; }
+
+#about-me h1 {
+  border-bottom: 3px solid black;
+  margin-top: 3%;
+  margin-bottom: 3.5%;
+  font-size: 300%;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif; }
+
+#about-me .row {
+  margin-left: 0;
+  margin-right: 0; }
+
+#about-me .about-me-wrapper {
+  margin-top: 3%;
+  margin-bottom: 15.5%; }
+
+#about-me #info-me {
+  padding-left: 10%; }
+
+#about-me #info-me h2 {
+  font-family: 'Muli', sans-serif;
+  font-size: 450%;
+  font-weight: 600;
+  letter-spacing: 2px; }
+
+#about-me #info-me p {
+  padding-top: 2%;
+  font-size: 145%;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif; }
+
+#about-me #info-me ul {
+  list-style-type: none; }
+
+#about-me #info-skills #skills-header {
+  padding: 0;
+  font-family: 'Muli', sans-serif; }
+
+#about-me #info-skills #skills-header h3 {
+  font-size: 300%;
+  font-weight: 500; }
+
+#about-me #info-skills #skills-list {
+  padding: 10px 0 0 0; }
+
+#about-me #info-me ul li {
+  display: inline-block;
+  font-size: 125%;
+  font-weight: 600;
+  border: 1px solid black;
+  padding: 1px 5px;
+  border-radius: 4px;
+  margin: 3px 1px;
+  box-shadow: 2px 1px 10px #999;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #FFFFFF; }
+
+#about-me #picture-me {
+  padding-left: 0;
+  padding-right: 2%; }
+
+#about-me #picture-me img {
+  width: 100%; }
+
+/* ---------- projects css ---------- */
+#project-wrapper {
+  background-color: #F9FFF2; }
+  #project-wrapper h1 {
+    margin-top: 2%;
+    margin-bottom: 3.5%;
+    font-size: 300%;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    border-bottom: 3px solid black;
+    padding-bottom: 3px; }
+  #project-wrapper .row {
+    margin-top: 0.5%;
+    margin-left: 0;
+    margin-right: 0; }
+    #project-wrapper .row img {
+      width: 100%;
+      height: 375px;
+      margin-top: 3px;
+      margin-bottom: 3px; }
+  #project-wrapper .projects-background {
+    margin-bottom: 10%; }
+    #project-wrapper .projects-background .grid {
+      border: 1px solid #D6DBD0;
+      border-radius: 5px;
+      background-color: #FFFFFF;
+      margin-bottom: 1.5%; }
+      #project-wrapper .projects-background .grid #project-info h2 {
+        font-family: 'Muli', sans-serif;
+        font-size: 270%;
+        font-weight: 600;
+        letter-spacing: 1.1px; }
+      #project-wrapper .projects-background .grid #project-info h4 {
+        font-family: 'Muli', sans-serif;
+        letter-spacing: 1.2px; }
+      #project-wrapper .projects-background .grid #project-info p {
+        padding-top: 7%;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 115%; }
+      #project-wrapper .projects-background .grid #project-info a {
+        text-decoration: none; }
+        #project-wrapper .projects-background .grid #project-info a .myButton {
+          font-family: 'Montserrat', sans-serif;
+          padding: 8px;
+          border: 1px solid #d3d3d3;
+          border-radius: 5px;
+          font-size: 115%;
+          font-weight: 600;
+          color: #000000; }
+        #project-wrapper .projects-background .grid #project-info a :hover {
+          background-color: #2292A4;
+          color: #FFFFFF; }
+
+/* ---------------Footer ------------ */
+#footer {
+  background-color: black;
+  width: 100%; }
+  #footer #social-media ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 0; }
+    #footer #social-media ul li {
+      display: inline-block;
+      font-size: 700%;
+      font-weight: 700; 
+      padding: 0 15px; }
+      #footer #social-media ul li i {
+        color: #E4E3EF; }
+      #footer #social-media ul li :hover {
+        color: #2978A0;
+        -webkit-transform: scale(1.15);
+        -ms-transform: scale(1.15);
+        transform: scale(1.15); }
+  #footer #contact-form {
+    color: #E4E3EF;
+    text-align: center;
+    display: inline;
+    font-family: 'Montserrat', sans-serif; }
+    #footer #contact-form h4 {
+      font-size: 200%;
+      font-weight: 600;
+      margin-top: 0; }
+    #footer #contact-form p {
+      font-size: 160%;
+      font-weight: 600;
+      letter-spacing: 1.3px; }
+
+/* -------------- Media Queries ---------------*/
+@media screen and (max-width: 950px) {
+  #intro h1 {
+    font-size: 650%; }
+  #intro h2 {
+    font-size: 300%; }
+  #intro #directory {
+    font-size: 225%; } }
+
+@media screen and (max-width: 775px) {
+  #intro h1 {
+    font-size: 670%; }
+  #intro h2 {
+    font-size: 220%; }
+  #intro #directory {
+    font-size: 225%; }
+  #intro ul li {
+    font-size: 320%;
+    padding: 10px 14px 0 14px; } }
+
+@media screen and (max-width: 576px) {
+  #intro h1 {
+    font-size: 700%; }
+  #intro h2 {
+    font-size: 200%; }
+  #intro #directory {
+    font-size: 225%; } }
+
+@media screen and (max-width: 460px) {
+  #intro h1 {
+    font-size: 550%; }
+  #intro h2 {
+    font-size: 140%; }
+  #intro #directory {
+    font-size: 175%; }
+  #intro ul li {
+    font-size: 300%;
+    padding: 10px 14px 0 14px; } }
+
+@media screen and (max-width: 390px) {
+  #intro h1 {
+    font-size: 500%; }
+  #intro h2 {
+    font-size: 130%; }
+  #intro #directory {
+    font-size: 155%; }
+  #intro ul li {
+    font-size: 250%; }
+  #footer #contact-form p {
+    font-size: 145%;
+    letter-spacing: 0.2px; }
+  #about-me .about-me-wrapper #info-me h2 {
+    font-size: 426%;
+    letter-spacing: 1.6px; } }
