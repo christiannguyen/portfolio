@@ -60,7 +60,7 @@ header.navigation {
   padding: 0; }
 
 #intro:before {
-  background: linear-gradient(rgba(0, 130, 160, 0.4), rgba(0, 130, 160, 0.4)), url(/assets/4.jpg);
+  background: linear-gradient(rgba(0, 130, 160, 0.4), rgba(0, 130, 160, 0.4)), url(../assets/4.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -159,11 +159,11 @@ a:visited {
 
 #about-me h1 {
   border-bottom: 3px solid black;
-  margin-top: 3%;
+  margin-top: 7%;
   margin-bottom: 3.5%;
   font-size: 300%;
   font-weight: 600;
-  font-family: 'Poppins', sans-serif; }
+  font-family: 'Lato', sans-serif; }
 
 #about-me .row {
   margin-left: 0;

@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	$("#directory a#about-me-div").click(function() {
+	$(".navbar li > a#about-me-div").click(function() {
     $('body').animate({
         scrollTop: $("#about-me").offset().top
     }, 750);
@@ -26,7 +26,7 @@ $(document).ready(function(){
 	
 
 const nav = document.querySelector(".navbar");
-let navOffset = screen.height - 200;
+let navOffset = screen.height/1.7;
 
 
 function fixNav() {
