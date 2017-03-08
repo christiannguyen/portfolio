@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Christian Nguyen - Frontend Developer </title>
-  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="../styles/index.css" />
   <link href="css/font-awesome.min.css" rel="stylesheet" />
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -14,18 +14,19 @@
   
   <!-- Start of Intro-->
   <header class="navigation">
-    <div class="logo">
-      <h1> Christian Nguyen | Front End Developer</h1>
+    <nav class="navbar navbar-default">
+    <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">CHRISTIAN NGUYEN | FRONT END DEVELOPER</a>
     </div>
-    <nav>
-      <ul class="nav-buttons">
-        <li><a>Home</a></li>
-        <li><a>About</a></li>
-        <li><a>Projects</a></li>
-        <li><a>Blog</a></li>
-        <li><a>Contact</a></li>
-      </ul>
-    </nav>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#">ABOUT</a></li>
+      <li><a href="#">PROJECTS</a></li>
+      <li><a href="#">BLOG</a></li>
+      <li><a href="#">CONTACT</a></li>
+    </ul>
+  </div>
+</nav>
   </header>
   <div class="container-fluid" id="intro">
     <div id="name">
@@ -180,8 +181,19 @@
       </div>
     </div>
   </div>
+
+<section>
+  <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/14lh6MIQOy9j3jWzEl7BysxEe4p9OoU9WN3tytbQjj1I/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
+ Name<br>
+  <input type="text" name="Name"><br>
+ Email<br>
+  <input type="text" name="lastname">
+  <input type="submit" value="Submit">
+</form>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+</section>
   <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
-  <script src="app.js"></script>
+  <script src="../app.js"></script>
 </body>
 <!--
 <section class="skills">
