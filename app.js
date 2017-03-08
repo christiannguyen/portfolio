@@ -26,7 +26,7 @@ $(document).ready(function(){
 	
 
 const nav = document.querySelector(".navbar");
-let navOffset = screen.height;
+let navOffset = screen.height - 200;
 
 
 function fixNav() {

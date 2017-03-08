@@ -60,7 +60,7 @@ header.navigation {
   padding: 0; }
 
 #intro:before {
-  background: linear-gradient(rgba(0, 130, 160, 0.4), rgba(0, 130, 160, 0.4)), url(../assets/4.jpg);
+  background: linear-gradient(rgba(0, 130, 160, 0.4), rgba(0, 130, 160, 0.4)), url(/assets/4.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
