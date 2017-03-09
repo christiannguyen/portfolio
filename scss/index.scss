@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Muli|Lato|Source+Sans+Pro||Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Muli|Lato|Source+Sans+Pro|Open+Sans");
 /*
 font-family: 'Libre Baskerville', serif;
 font-family: 'ABeeZee', sans-serif;
@@ -10,6 +10,9 @@ font-family: 'Armata', sans-serif;
 */
 
 $nav-color: #f0f0f0;
+$contact-color: #f0f0f0;
+$background-color: #F9FFF2;
+$blue-color: #0078A0;
 
 * {
   margin: 0;
@@ -68,7 +71,7 @@ header.navigation {
 
 
 #intro {
-  position: relative;
+ position: relative;
  overflow: hidden;
  height: 100vh;
  padding: 0;
@@ -78,7 +81,7 @@ header.navigation {
     linear-gradient(
       rgba(0, 130, 160, 0.4), 
       rgba(0, 130, 160, 0.4)
-    ),url(../assets/4.jpg);
+    ),url(../assets/1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -91,19 +94,22 @@ header.navigation {
 }
 
 #intro #name {
-  padding-top: 15%;
-  color: #3f3f3f; }
+  color: #000000; }
 
-#intro h1 {
+#intro .intro-info{
+  position: relative;
+  top: 30vh;
+}
+#intro .intro-info h1 {
   text-align: center;
-  font-size: 500%;
+  font-size: 5.1em;
   font-weight: 1100;
   font-family: 'Lato', sans-serif;
   letter-spacing: 2px; }
 
-#intro h2 {
+#intro .intro-info  h2 {
   text-align: center;
-  font-size: 150%;
+  font-size: 2em;
   font-weight: 700;
   font-family: 'Lato', sans-serif;
   letter-spacing: 2px; }
@@ -293,6 +299,78 @@ a:visited {
           background-color: #2292A4;
           color: #FFFFFF; }
 
+/* ---------------Contact Form ---------- */
+    #contact-wrapper{
+      padding: 0;
+      padding: 0 10%;
+      background-color: $contact-color; 
+      height: 100%;
+      h3 {
+        text-align: center;
+        margin: 50px 0;
+        color: $blue-color;
+        font: 2.5em 'Open Sans', sans-serif;
+      }
+      .input {
+        margin-top: 30px;
+        :focus{
+          outline: none;
+        }
+      }
+      #name {
+        padding: 0;
+        font: 1.8em 'Lato', sans-serif;
+        width: 100%;
+        padding-bottom: 5px;
+        background-color: $contact-color;
+        border-bottom: 3px solid $blue-color;
+      }
+      #email{
+        padding: 0;
+        padding-bottom: 5px;
+        font: 1.8em 'Lato', sans-serif;
+        border-bottom: 3px solid $blue-color;
+        width: 100%;
+        background-color: $contact-color;
+      }
+      #message {
+        font: 1.8em 'Lato', sans-serif;
+        border-bottom: 3px solid $blue-color;
+        margin-top: 20px;
+        width: 100%;
+        // height: 50px;  
+        background-color: $contact-color;
+        resize: none;
+        &:focus{
+          outline: none;
+        }
+        }
+      #send {
+        text-align: center;
+        width: 100%;
+        margin: 30px 0;
+        padding: 20px 0;
+        color: #0078A0;
+        font: 2em 'Lato', sans-serif;
+        border: 3px solid #0078A0;
+        transition: all 0.5s ease;
+        
+        &:hover{
+          color: #FFFFFF;
+          background-color: #0078A0;
+          transition: all 0.5s ease;
+        }
+      }
+    p{
+      font: 1.8em 'Open Sans', sans-serif;
+      color: $blue-color;
+      font-weight: 500;
+      text-align: center;
+      transition: all 0.5s ease-in;
+      margin-bottom: 40px;
+    }
+      }
+    
 /* ---------------Footer ------------ */
 #footer {
   background-color: black;
