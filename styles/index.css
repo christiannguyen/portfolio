@@ -18,27 +18,41 @@ header.navigation {
   margin: 0;
   position: fixed;
   width: 100%;
-  z-index: 1; }
+  z-index: 5; }
   header.navigation .navbar-default {
-    height: 6vh;
     margin: 0;
-    min-height: 80px;
+    z-index: 5;
     border: none;
     border-radius: 0;
     background-color: transparent;
     transition: all 0.5s ease-in; }
+    header.navigation .navbar-default #navbar-collapse {
+      visibility: hidden;
+      opacity: 0;
+      transition: all 0.5s ease-in; }
+    header.navigation .navbar-default .navbar-toggle {
+      border: none;
+      visibility: hidden;
+      margin-right: 10px;
+      padding: 9px 0;
+      opacity: 0;
+      transition: all 0.4s ease-out; }
+      header.navigation .navbar-default .navbar-toggle:focus {
+        background: none; }
+      header.navigation .navbar-default .navbar-toggle:hover {
+        background: none; }
     header.navigation .navbar-default .navbar-brand {
       opacity: 0;
       color: #000000;
-      letter-spacing: 1.7px;
+      letter-spacing: 1.5px;
       font-weight: 1000;
       font: 1.1em 'Lato', sans-serif;
-      margin-left: 35px;
+      margin-left: 0;
       transition: all 0.4s ease-out; }
     header.navigation .navbar-default .navbar-nav {
-      height: 0;
-      margin-right: 35px; }
+      margin-right: 0; }
     header.navigation .navbar-default .navbar-nav > li > a {
+      visibility: hidden;
       color: #000000;
       opacity: 0;
       font-weight: 1000;
@@ -51,6 +65,15 @@ header.navigation {
       opacity: 1;
       transition: all 0.5s ease-in; }
     header.navigation .displayed .navbar-nav > li > a {
+      opacity: 1;
+      visibility: visible;
+      transition: all 0.5s ease-in; }
+    header.navigation .displayed .navbar-toggle {
+      opacity: 1;
+      visibility: visible;
+      transition: all 0.5s ease-in; }
+    header.navigation .displayed #navbar-collapse {
+      visibility: visible;
       opacity: 1;
       transition: all 0.5s ease-in; }
 
@@ -98,7 +121,7 @@ header.navigation {
   text-align: center; }
 
 #intro ul li {
-  display: inline;
+  display: inline-block;
   padding: 10px 17px 0 17px;
   font-size: 500%; }
 
@@ -321,7 +344,7 @@ a:visited {
   #contact-wrapper #message {
     font: 1.8em 'Lato', sans-serif;
     border-bottom: 3px solid #0078A0;
-    margin-top: 20px;
+    margin-top: 35px;
     width: 100%;
     background-color: #f0f0f0;
     resize: none; }
@@ -330,7 +353,7 @@ a:visited {
   #contact-wrapper #send {
     text-align: center;
     width: 100%;
-    margin: 30px 0;
+    margin: 50px 0;
     padding: 20px 0;
     color: #0078A0;
     font: 2em 'Lato', sans-serif;
@@ -415,18 +438,14 @@ a:visited {
   #intro h2 {
     font-size: 200%; }
   #intro #directory {
-    font-size: 225%; } }
-
-@media screen and (max-width: 460px) {
-  #intro h1 {
-    font-size: 550%; }
-  #intro h2 {
-    font-size: 140%; }
-  #intro #directory {
-    font-size: 175%; }
-  #intro ul li {
-    font-size: 300%;
-    padding: 10px 14px 0 14px; } }
+    font-size: 225%; }
+  header.navigation .navbar-default .navbar-brand {
+    font-size: 0.7em;
+    margin: 0;
+    letter-spacing: 1.1px;
+    line-height: 20px; }
+  body > header > nav > div > div.navbar-header > button {
+    margin-right: 5px !important; } }
 
 @media screen and (max-width: 390px) {
   #intro h1 {
