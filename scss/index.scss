@@ -12,6 +12,7 @@ font-family: 'Armata', sans-serif;
 $nav-color: #f0f0f0;
 $contact-color: #f0f0f0;
 $background-color: #F9FFF2;
+$background-color2: #FCFCFC;
 $blue-color: #0078A0;
 $footer-color: #2978A0;
 
@@ -210,15 +211,16 @@ a:visited {
 
 /* --------- about me -------- */
 #about-me {
-  background-color: #F9FFF2; }
+  background-color: $background-color2; }
 
-#about-me h1 {
+#about-me h2 {
   border-bottom: 3px solid black;
-  margin-top: 7%;
+  margin-top: 5%;
   margin-bottom: 3.5%;
-  font-size: 300%;
+  font-size: 3.5em;
   font-weight: 600;
-  font-family: 'Lato', sans-serif; }
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1.3px; }
 
 #about-me .row {
   margin-left: 0;
@@ -229,17 +231,20 @@ a:visited {
   margin-bottom: 15.5%; }
 
 #about-me #info-me {
-  padding-left: 10%; }
+  padding-left: 10%;
+  line-height: 250%; }
 
-#about-me #info-me h2 {
-  font-family: 'Muli', sans-serif;
-  font-size: 450%;
+#about-me #info-me h3 {
+  font-family: 'Lato', sans-serif;
+  font-size: 4em;
+  color: $blue-color;
   font-weight: 600;
   letter-spacing: 2px; }
 
 #about-me #info-me p {
   padding-top: 2%;
-  font-size: 145%;
+  font-size: 1.7em;
+  // line-height: 10px;
   font-weight: 400;
   font-family: 'Open Sans', sans-serif; }
 
@@ -248,26 +253,38 @@ a:visited {
 
 #about-me #info-skills #skills-header {
   padding: 0;
-  font-family: 'Muli', sans-serif; }
+  font-family: 'Lato', sans-serif; }
 
-#about-me #info-skills #skills-header h3 {
-  font-size: 300%;
-  font-weight: 500; }
+#about-me #info-skills #skills-header h4 {
+  padding-top: 12%;
+  font-size: 3em;
+  color: $blue-color;
+  font-weight: 600; }
 
 #about-me #info-skills #skills-list {
-  padding: 10px 0 0 0; }
+   padding: 10px 0 0 0; 
+  }
 
 #about-me #info-me ul li {
   display: inline-block;
-  font-size: 125%;
-  font-weight: 600;
-  border: 1px solid black;
-  padding: 1px 5px;
-  border-radius: 4px;
-  margin: 3px 1px;
-  box-shadow: 2px 1px 10px #999;
-  font-family: 'Open Sans', sans-serif;
-  background-color: #FFFFFF; }
+
+  padding: 5px 10px;
+  // font-size: 125%;
+  // font-weight: 600;
+  // border: 1px solid black;
+  // padding: 1px 5px;
+  // border-radius: 4px;
+  // margin: 3px 1px;
+  // box-shadow: 2px 1px 10px #999;
+  // font-family: 'Open Sans', sans-serif;
+  // background-color: #FFFFFF; 
+  img {
+  fill: red;
+    display: inline;
+    height: 70px;
+    width: 100px;
+  }
+}
 
 #about-me #picture-me {
   padding-left: 0;
@@ -278,11 +295,12 @@ a:visited {
 
 /* ---------- projects css ---------- */
 #project-wrapper {
-  background-color: #F9FFF2; }
-  #project-wrapper h1 {
-    margin-top: 2%;
+  background-color: #FCFCFC; }
+  #project-wrapper h2 {
+    margin-top: 4%;
     margin-bottom: 3.5%;
-    font-size: 300%;
+    font-size: 3.5em;
+    letter-spacing: 1.3px;
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
     border-bottom: 3px solid black;
@@ -315,31 +333,36 @@ a:visited {
         padding-top: 7%;
         font-family: 'Open Sans', sans-serif;
         font-size: 115%; }
-      #project-wrapper .projects-background .grid #project-info a {
-        text-decoration: none; }
-        #project-wrapper .projects-background .grid #project-info a .myButton {
-          font-family: 'Montserrat', sans-serif;
-          padding: 8px;
+      #project-wrapper .projects-background .grid #project-picture a {
+        text-decoration: none;
+        padding: 3px;
+       }
+        #project-wrapper .projects-background .grid #project-picture a .myButton {
+          font-family: 'Open Sans', sans-serif;
+          margin-bottom: 15px;
+          padding: 10px;
           border: 1px solid #d3d3d3;
           border-radius: 5px;
-          font-size: 115%;
+          font-size: 1.2em;
           font-weight: 600;
-          color: #000000; }
-        #project-wrapper .projects-background .grid #project-info a :hover {
+          color: #000000;
+          transition: all 0.5s ease; }
+        #project-wrapper .projects-background .grid #project-picture a :hover {
           background-color: #2292A4;
-          color: #FFFFFF; }
+          color: #FFFFFF;
+           transition: all 0.5s ease; }
 
 /* ---------------Contact Form ---------- */
     #contact-wrapper{
       padding: 0;
       padding: 0 10%;
-      background-color: $contact-color; 
+      background-color: $background-color2; 
       height: 100%;
       h3 {
         text-align: center;
         margin: 50px 0;
         color: $blue-color;
-        font: 2.5em 'Open Sans', sans-serif;
+        font: 2.8em 'Open Sans', sans-serif;
       }
       .input {
         margin-top: 30px;
@@ -352,7 +375,7 @@ a:visited {
         font: 1.8em 'Lato', sans-serif;
         width: 100%;
         padding-bottom: 5px;
-        background-color: $contact-color;
+        background-color: $background-color2;
         border-bottom: 3px solid $blue-color;
       }
       #email{
@@ -361,7 +384,7 @@ a:visited {
         font: 1.8em 'Lato', sans-serif;
         border-bottom: 3px solid $blue-color;
         width: 100%;
-        background-color: $contact-color;
+        background-color: $background-color2;
       }
       #message {
         font: 1.8em 'Lato', sans-serif;
@@ -369,13 +392,14 @@ a:visited {
         margin-top: 35px;
         width: 100%;
         // height: 50px;  
-        background-color: $contact-color;
+        background-color: $background-color2;
         resize: none;
         &:focus{
           outline: none;
         }
         }
       #send {
+        background-color: $contact-color;
         text-align: center;
         width: 100%;
         margin: 50px 0;
@@ -490,5 +514,17 @@ a:visited {
   #footer .resume-copyright p{
     font-size: 1.02em;
   }
+  #intro .intro-info h1{
+    line-height: 80px;
+    font-size: 4.5em;
   }
+  #intro .intro-info h2{
+    font-size: 1.0em;
+  }
+}
 
+@media screen and (max-width: 768px){
+    #project-picture > div {
+    text-align: center;
+  }
+}

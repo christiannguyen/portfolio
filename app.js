@@ -7,16 +7,16 @@ $(document).ready(function(){
 
 	});
 
-	$("#directory a#projects-div").click(function() {
+	$(".navbar li a#projects-div").click(function() {
     $('body').animate({
         scrollTop: $("#project-wrapper").offset().top
     }, 750);
 
 	});
 
-	$("#directory a#contact-div").click(function() {
+	$(".navbar li a#contacts-div").click(function() {
     $('body').animate({
-        scrollTop: $("#contact-me-div").offset().top
+        scrollTop: $("#contact-wrapper").offset().top
     }, 750);
 
 	});
