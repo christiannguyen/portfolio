@@ -14,20 +14,56 @@
   
   <!-- Start of Intro-->
   <header class="navigation">
-    <nav class="navbar navbar-default">
-    <div class="container-fluid">
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+			<div class="container">
+        
+         <div class="navbar-header">
+            <!--<div class="navbar-header">-->
+      <a class="navbar-brand">CHRISTIAN NGUYEN | FRONT END DEVELOPER</a>
+    <!--</div>-->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          </div>
+          
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbar-collapse">
+				<ul class="nav navbar-nav navbar-right">
+      <li><a id="about-me-div">ABOUT</a></li>
+      <li><a id="projects-div">PROJECTS</a></li>
+      <li><a href="/views/blog">BLOG</a></li>
+      <li><a id="contacts-div">CONTACT</a></li>
+    </ul>
+		</div>
+		</nav>
+  </div>
+    <!--<nav class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
     <div class="navbar-header">
       <a class="navbar-brand">CHRISTIAN NGUYEN | FRONT END DEVELOPER</a>
     </div>
+     <div class="collapse navbar-collapse" id="navbar-collapse-1">
     <ul class="nav navbar-nav navbar-right">
       <li><a id="about-me-div">ABOUT</a></li>
       <li><a id="projects-div">PROJECTS</a></li>
       <li><a href="/views/blog">BLOG</a></li>
       <li><a id="contacts-div">CONTACT</a></li>
     </ul>
-  </div>
-</nav>
-  </header>
+     </div>
+      </div>
+  </nav>-->
+</header>
   <div class="container-fluid" id="intro">
     <div id="name">
       <div class="intro-info">
@@ -207,16 +243,16 @@
     </div>
   </div>
 
-
   <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="app.js"></script>
-  <script type="text/javascript">let submitted=false;</script>
-<script type="text/javascript">
+  <!--<script type="text/javascript">let submitted=false;</script>
+  <script type="text/javascript">
 $('#contact-form-input').on('submit', function(e) {
   $('#contact-form-input *').fadeOut(1000);
   $(`<p>Looking forward to chatting with you!</p>`).hide().prependTo('#contact-form-input').show('slow');
   });
-</script>
+</script>-->
 </body>
 <!--
 <section class="skills">
