@@ -21,10 +21,7 @@ $(document).ready(function(){
 
 	});
     
-   $('#contact-form-input').on('submit', function(e) {
-  $('#contact-form-input *').fadeOut(1000);
-  $(`<p>Looking  to chatting with you!</p>`).hide().prependTo('#contact-form-input').show('slow');
-});
+   
 
     });
 	
@@ -45,5 +42,3 @@ function fixNav() {
 }
 
 window.addEventListener('scroll', fixNav);
-
-const submitted=false;
