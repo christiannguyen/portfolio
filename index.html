@@ -191,19 +191,19 @@
   <div class="container-fluid" id="contact-wrapper">
     <div class="row">
       <div class="col-sm-12">
-        <h3> Let's Get In Touch.</h3>
+        <h3> Let's Connect.</h3>
       </div>
     </div>
     <form name="gform" id="contact-form-input" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSd5DjHqeoQjQzEq7DaEN4YcaZ6XfFuqpMLmHnV5LEDDAltdZw/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
     <div class="row">
       <div class="col-sm-6 input">
-        <input type="text" id="name" name="entry.1216703358" placeholder="Name">
+        <input type="text" id="name" name="entry.1216703358" placeholder="Name" required>
       </div>
       <div class="col-sm-6 input">
-        <input type="text" id="email" name="entry.1198912" placeholder="Email">
+        <input type="email" id="email" name="entry.1198912" placeholder="Email" required>
       </div>
       <div class="col-sm-12">
-        <textarea type="text" id="message" name="entry.1157557445" placeholder="Message" rows="5"></textarea>
+        <textarea type="text" id="message" name="entry.1157557445" placeholder="Message" rows="5" required></textarea>
       </div>
       <div class="col-sm-12">
         <input type="submit" value="Send" id="send">
@@ -224,7 +224,7 @@
           </li>
           <li>
             <a href="#">
-              <i class="fa fa-github" aria-hidden="true"></i>
+              <i class="fa fa-github fa-1" aria-hidden="true"></i>
             </a>
           </li>
           <li>
@@ -232,33 +232,21 @@
               <i class="fa fa-codepen" aria-hidden="true"></i>
             </a>
           </li>
-          <li>
-          </li>
         </ul>
+        <div class="resume-copyright">
+        <a href="#"> RESUME</a>
+        <p> © 2017 Christian Nguyen. All Rights Reserved.</p>
+        </div>
       </div>
-      <div class="col-sm-12" id="contact-form">
+      <!--<div class="col-sm-12" id="contact-form">
         <h4> Contact me at: </h4>
         <p> christiannnguyen7@gmail.com</p>
-      </div>
+      </div>-->
     </div>
   </div>
+  
 
   <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="app.js"></script>
-  <!--<script type="text/javascript">let submitted=false;</script>
-  <script type="text/javascript">
-$('#contact-form-input').on('submit', function(e) {
-  $('#contact-form-input *').fadeOut(1000);
-  $(`<p>Looking forward to chatting with you!</p>`).hide().prependTo('#contact-form-input').show('slow');
-  });
-</script>-->
 </body>
-<!--
-<section class="skills">
-            <h1> Skills </h1>
-            <td><i class="fa fa-html5" aria-hidden="true"></i></td>
-            <td><i class="fa fa-css3" aria-hidden="true"></i></td>
-            <td><i class="fa fa-github" aria-hidden="true"></i></td>
-        </section>
--->

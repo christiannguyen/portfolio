@@ -13,6 +13,7 @@ $nav-color: #f0f0f0;
 $contact-color: #f0f0f0;
 $background-color: #F9FFF2;
 $blue-color: #0078A0;
+$footer-color: #2978A0;
 
 * {
   margin: 0;
@@ -389,6 +390,9 @@ a:visited {
           background-color: #0078A0;
           transition: all 0.5s ease;
         }
+        &:invalid{
+          background: red;
+        }
       }
     p{
       font: 1.8em 'Open Sans', sans-serif;
@@ -403,23 +407,52 @@ a:visited {
 /* ---------------Footer ------------ */
 #footer {
   background-color: black;
-  width: 100%; }
+  width: 100%; 
+  .resume-copyright{
+    text-align: center;
+    margin-top: 3px;
+  a {
+    color: white;
+    font-size: 1.35em;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    letter-spacing: 1.3px;
+    text-decoration: none;
+     transition: all 0.5s ease;
+    &:hover{
+      color: $footer-color;
+      transition: all 0.5s ease;
+    }
+  }
+  p{
+    font-size: 1.25em;
+    font-family: 'Lato', sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+    letter-spacing: 0.8px;
+    margin-bottom: 15px;
+  }
+  }}
   #footer #social-media ul {
     list-style-type: none;
     text-align: center;
-    margin: 0; }
+    margin: 0;
+    margin-top: 10px; }
     #footer #social-media ul li {
       display: inline-block;
-      font-size: 700%;
+      font-size: 3.2em;
       font-weight: 700; 
       padding: 0 15px; }
       #footer #social-media ul li i {
-        color: #E4E3EF; }
+        color: #E4E3EF;
+         transition: all 0.5s ease; }
       #footer #social-media ul li :hover {
-        color: #2978A0;
-        -webkit-transform: scale(1.15);
-        -ms-transform: scale(1.15);
-        transform: scale(1.15); }
+        color: $footer-color;
+        transition: all 0.5s ease;
+      }
+        // -webkit-transform: scale(1.15);
+        // -ms-transform: scale(1.15);
+        // transform: scale(1.15); }
   #footer #contact-form {
     color: #E4E3EF;
     text-align: center;
@@ -428,31 +461,15 @@ a:visited {
     #footer #contact-form h4 {
       font-size: 200%;
       font-weight: 600;
-      margin-top: 0; }
+      margin-top: 0;
+      text-align: center; }
     #footer #contact-form p {
       font-size: 160%;
       font-weight: 600;
       letter-spacing: 1.3px; }
 
 /* -------------- Media Queries ---------------*/
-@media screen and (max-width: 950px) {
-  #intro h1 {
-    font-size: 650%; }
-  #intro h2 {
-    font-size: 300%; }
-  #intro #directory {
-    font-size: 225%; } }
 
-@media screen and (max-width: 775px) {
-  #intro h1 {
-    font-size: 670%; }
-  #intro h2 {
-    font-size: 220%; }
-  #intro #directory {
-    font-size: 225%; }
-  #intro ul li {
-    font-size: 320%;
-    padding: 10px 14px 0 14px; } }
 
 @media screen and (max-width: 576px) {
   #intro h1 {
@@ -469,32 +486,9 @@ a:visited {
   } 
   body > header > nav > div > div.navbar-header > button {
     margin-right: 5px !important;
-  } }
+  } 
+  #footer .resume-copyright p{
+    font-size: 1.02em;
+  }
+  }
 
-// @media screen and (max-width: 460px) {
-//   #intro h1 {
-//     font-size: 550%; }
-//   #intro h2 {
-//     font-size: 140%; }
-//   #intro #directory {
-//     font-size: 175%; }
-//   #intro ul li {
-//     font-size: 300%;
-//     padding: 10px 14px 0 14px; } 
-//  }
-
-@media screen and (max-width: 390px) {
-  #intro h1 {
-    font-size: 500%; }
-  #intro h2 {
-    font-size: 130%; }
-  #intro #directory {
-    font-size: 155%; }
-  #intro ul li {
-    font-size: 250%; }
-  #footer #contact-form p {
-    font-size: 145%;
-    letter-spacing: 0.2px; }
-  #about-me .about-me-wrapper #info-me h2 {
-    font-size: 426%;
-    letter-spacing: 1.6px; } }

@@ -363,6 +363,8 @@ a:visited {
       color: #FFFFFF;
       background-color: #0078A0;
       transition: all 0.5s ease; }
+    #contact-wrapper #send:invalid {
+      background: red; }
   #contact-wrapper p {
     font: 1.8em 'Open Sans', sans-serif;
     color: #0078A0;
@@ -375,26 +377,47 @@ a:visited {
 #footer {
   background-color: black;
   width: 100%; }
+  #footer .resume-copyright {
+    text-align: center;
+    margin-top: 3px; }
+    #footer .resume-copyright a {
+      color: white;
+      font-size: 1.35em;
+      font-family: 'Lato', sans-serif;
+      text-align: center;
+      letter-spacing: 1.3px;
+      text-decoration: none;
+      transition: all 0.5s ease; }
+      #footer .resume-copyright a:hover {
+        color: #2978A0;
+        transition: all 0.5s ease; }
+    #footer .resume-copyright p {
+      font-size: 1.25em;
+      font-family: 'Lato', sans-serif;
+      color: #FFFFFF;
+      text-align: center;
+      letter-spacing: 0.8px;
+      margin-bottom: 15px; }
 
 #footer #social-media ul {
   list-style-type: none;
   text-align: center;
-  margin: 0; }
+  margin: 0;
+  margin-top: 10px; }
 
 #footer #social-media ul li {
   display: inline-block;
-  font-size: 700%;
+  font-size: 3.2em;
   font-weight: 700;
   padding: 0 15px; }
 
 #footer #social-media ul li i {
-  color: #E4E3EF; }
+  color: #E4E3EF;
+  transition: all 0.5s ease; }
 
 #footer #social-media ul li :hover {
   color: #2978A0;
-  -webkit-transform: scale(1.15);
-  -ms-transform: scale(1.15);
-  transform: scale(1.15); }
+  transition: all 0.5s ease; }
 
 #footer #contact-form {
   color: #E4E3EF;
@@ -405,7 +428,8 @@ a:visited {
 #footer #contact-form h4 {
   font-size: 200%;
   font-weight: 600;
-  margin-top: 0; }
+  margin-top: 0;
+  text-align: center; }
 
 #footer #contact-form p {
   font-size: 160%;
@@ -413,25 +437,6 @@ a:visited {
   letter-spacing: 1.3px; }
 
 /* -------------- Media Queries ---------------*/
-@media screen and (max-width: 950px) {
-  #intro h1 {
-    font-size: 650%; }
-  #intro h2 {
-    font-size: 300%; }
-  #intro #directory {
-    font-size: 225%; } }
-
-@media screen and (max-width: 775px) {
-  #intro h1 {
-    font-size: 670%; }
-  #intro h2 {
-    font-size: 220%; }
-  #intro #directory {
-    font-size: 225%; }
-  #intro ul li {
-    font-size: 320%;
-    padding: 10px 14px 0 14px; } }
-
 @media screen and (max-width: 576px) {
   #intro h1 {
     font-size: 700%; }
@@ -445,20 +450,6 @@ a:visited {
     letter-spacing: 1.1px;
     line-height: 20px; }
   body > header > nav > div > div.navbar-header > button {
-    margin-right: 5px !important; } }
-
-@media screen and (max-width: 390px) {
-  #intro h1 {
-    font-size: 500%; }
-  #intro h2 {
-    font-size: 130%; }
-  #intro #directory {
-    font-size: 155%; }
-  #intro ul li {
-    font-size: 250%; }
-  #footer #contact-form p {
-    font-size: 145%;
-    letter-spacing: 0.2px; }
-  #about-me .about-me-wrapper #info-me h2 {
-    font-size: 426%;
-    letter-spacing: 1.6px; } }
+    margin-right: 5px !important; }
+  #footer .resume-copyright p {
+    font-size: 1.02em; } }
