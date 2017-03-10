@@ -34,12 +34,15 @@ header.navigation {
         background: none; }
     header.navigation .navbar-default .navbar-brand {
       opacity: 0;
+      padding: 15px 0;
       color: #000000;
-      letter-spacing: 1.5px;
+      letter-spacing: 1.1px;
       font-weight: 1000;
-      font: 1.1em 'Lato', sans-serif;
+      font: 1.05em 'Lato', sans-serif;
       margin-left: 0;
       transition: all 0.4s ease-out; }
+      header.navigation .navbar-default .navbar-brand:hover {
+        opacity: 0.5; }
     header.navigation .navbar-default .navbar-nav {
       margin-right: 0; }
     header.navigation .navbar-default .navbar-nav > li > a {
@@ -47,8 +50,12 @@ header.navigation {
       color: #000000;
       opacity: 0;
       font-weight: 1000;
-      font: 1.1em 'Lato', sans-serif;
+      font: 1em 'Lato', sans-serif;
       transition: all 0.4s ease-out; }
+      header.navigation .navbar-default .navbar-nav > li > a:hover {
+        transition: all 0.4s ease;
+        cursor: pointer;
+        opacity: 0.5; }
   header.navigation .displayed {
     background-color: #f0f0f0;
     transition: all 0.5s ease-in; }
@@ -106,70 +113,6 @@ header.navigation {
   font-weight: 700;
   font-family: 'Lato', sans-serif;
   letter-spacing: 2px; }
-
-#intro ul {
-  list-style-type: none;
-  text-align: center; }
-
-#intro ul li {
-  display: inline-block;
-  padding: 10px 17px 0 17px;
-  font-size: 500%; }
-
-#intro ul li i {
-  color: black; }
-
-#intro ul li i:hover {
-  color: #2978A0;
-  -webkit-transform: scale(1.15);
-  -ms-transform: scale(1.15);
-  transform: scale(1.15); }
-
-#intro #directory {
-  background-color: #2a2a2a;
-  position: absolute;
-  bottom: 0;
-  height: 80px;
-  width: 100%;
-  font-weight: 700;
-  font-size: 250%;
-  margin: 0; }
-
-#intro #directory .directories-info {
-  padding-top: 15px;
-  padding-left: 0;
-  padding-right: 0; }
-
-#intro #directory a {
-  color: #fafafa;
-  font-family: 'Montserrat', sans-serif; }
-
-#intro #directory .directories-info a:link,
-a:visited {
-  text-decoration: none; }
-
-#intro #directory .directories-info a:hover {
-  color: #a8a8a8;
-  text-decoration: none;
-  cursor: pointer; }
-
-#intro #directory .directories-info a:active {
-  text-decoration: none; }
-
-#intro #directory .sliding-u-l-r a {
-  display: inline-block; }
-
-#intro #directory .sliding-u-l-r a:after {
-  content: '';
-  display: block;
-  height: 3px;
-  width: 0;
-  background: transparent;
-  transition: width .6s ease, background-color .6s ease; }
-
-#intro #directory .sliding-u-l-r a:hover:after {
-  width: 100%;
-  background: #d3d3d3; }
 
 /* --------- about me -------- */
 #about-me {
