@@ -1,13 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Muli|Lato|Source+Sans+Pro|Open+Sans");
-/*
-font-family: 'Libre Baskerville', serif;
-font-family: 'ABeeZee', sans-serif;
-font-family: 'Domine', serif;
-font-family: 'Armata', sans-serif;
-*/
-/* color bank:
-#ECE8EF;
-*/
 
 $nav-color: #f0f0f0;
 $contact-color: #f0f0f0;
@@ -244,7 +235,6 @@ a:visited {
 #about-me #info-me p {
   padding-top: 2%;
   font-size: 1.7em;
-  // line-height: 10px;
   font-weight: 400;
   font-family: 'Open Sans', sans-serif; }
 
@@ -269,15 +259,6 @@ a:visited {
   display: inline-block;
 
   padding: 5px 10px;
-  // font-size: 125%;
-  // font-weight: 600;
-  // border: 1px solid black;
-  // padding: 1px 5px;
-  // border-radius: 4px;
-  // margin: 3px 1px;
-  // box-shadow: 2px 1px 10px #999;
-  // font-family: 'Open Sans', sans-serif;
-  // background-color: #FFFFFF; 
   img {
   fill: red;
     display: inline;
@@ -467,11 +448,14 @@ a:visited {
       font-size: 3.2em;
       font-weight: 700; 
       padding: 0 15px; }
-      #footer #social-media ul li i {
+      #footer #social-media ul li a img {
         color: #E4E3EF;
+        height: 50px;
+        width: 50px;
          transition: all 0.5s ease; }
-      #footer #social-media ul li :hover {
-        color: $footer-color;
+      #footer #social-media ul li a img:hover {
+        fill: $footer-color;
+        opacity: 0.7;
         transition: all 0.5s ease;
       }
         // -webkit-transform: scale(1.15);

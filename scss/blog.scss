@@ -6,11 +6,14 @@ $background-color: #F9FFF2;
 $background-color2: #FCFCFC;
 $blue-color: #0078A0;
 $footer-color: #2978A0;
+$blog-title-color: #a8a8a8;
 
 * {
   margin: 0;
   padding: 0;
   border: 0; }
+
+
 
 header.navigation {
   padding: 0;
@@ -18,6 +21,7 @@ header.navigation {
   position: fixed;
   width: 100%;
   z-index: 5;
+  
 .navbar-default{
     margin: 0;
     z-index: 5;
@@ -88,11 +92,69 @@ header.navigation {
 }
 
 /* ---------------Blog content------------ */
+  // .padding{
+  //   padding-top: 30px;
+  // }
+  // .blog-img {
+  //   height: 55vh;
+  //   background:
+  //     linear-gradient(
+  //       rgba(0, 0, 0, 0.1), 
+  //       rgba(0, 0, 0, 0.1)
+  //     ),url(../assets/blog-pic.jpg);
+  //   background-size: cover; 
+  //   background-repeat: no-repeat;
+  //   background-position: center;
+  // }
 #blog-content{
     padding-top: 50px;
     background-color: $background-color2;
-    text-align: center;
-    
+    margin-bottom: 3%;
+    h1{
+      font: 4em 'Muli', sans-serif;
+      margin: 5% -15px; 
+      margin-bottom: 7.5%;
+      text-align: left;
+      color: $blue-color;
+    }
+    .blog-post{
+      margin-top: 3%;
+      margin-bottom: 7%;
+      padding-bottom: 2%;
+      border-bottom: 2px solid $blue-color;
+    .title-date{
+      padding: 0;
+        // border-right: 1px solid black;
+      a{
+        color: $blog-title-color;
+        font: 2.3em 'Open Sans', sans-serif;
+        letter-spacing: 0.5px;
+        font-weight: 900;
+        margin: 0;
+        text-decoration: none;
+        &:hover{
+          cursor: pointer;
+          color: $blue-color;
+        }
+      }
+      h3{
+        color: #000000;
+        font: 1.3em 'Open Sans', sans-serif;
+        margin: 3px 0;
+      }
+    }
+    .description{
+      font: 1em 'Lato', sans-serif;
+      padding: 0;
+      p{
+      padding-top: 1.2%;
+      }
+    }
+    .read-more{
+      padding: 0;
+      margin-top: 3px;  
+    }
+    }
 }
 
 
@@ -135,16 +197,17 @@ header.navigation {
       font-size: 3.2em;
       font-weight: 700; 
       padding: 0 15px; }
-      #footer #social-media ul li i {
+     #footer #social-media ul li a img {
         color: #E4E3EF;
+        height: 50px;
+        width: 50px;
          transition: all 0.5s ease; }
-      #footer #social-media ul li :hover {
-        color: $footer-color;
+      #footer #social-media ul li a img:hover {
+        fill: $footer-color;
+        opacity: 0.7;
+        fill: red;
         transition: all 0.5s ease;
       }
-        // -webkit-transform: scale(1.15);
-        // -ms-transform: scale(1.15);
-        // transform: scale(1.15); }
   #footer #contact-form {
     color: #E4E3EF;
     text-align: center;
