@@ -222,6 +222,7 @@ header.navigation {
   font-family: 'Muli', sans-serif;
   font-size: 270%;
   font-weight: 600;
+  padding: 1.5% 0;
   letter-spacing: 1.1px; }
 
 #project-wrapper .projects-background .grid #project-info h4 {
@@ -229,9 +230,12 @@ header.navigation {
   letter-spacing: 1.2px; }
 
 #project-wrapper .projects-background .grid #project-info p {
-  padding-top: 7%;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 115%; }
+  padding-top: 5%;
+  font: 1.3em 'Open Sans', sans-serif;
+  line-height: 1.4; }
+
+#project-wrapper .projects-background .grid #project-picture img {
+  padding-top: 8%; }
 
 #project-wrapper .projects-background .grid #project-picture a {
   text-decoration: none;
