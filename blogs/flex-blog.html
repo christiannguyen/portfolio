@@ -5,86 +5,106 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Christian Nguyen - Frontend Developer </title>
   <link rel="stylesheet" type="text/css" href="../styles/flex-blog.css" />
-  <link rel="shortcut icon" type="image/x-icon" href="../favicon2.ico"/>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon2.ico" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
 </head>
 
 <body>
 
-<header class="navigation">
+  <header class="navigation">
     <nav class="navbar navbar-default navbar-static-top" role="navigation">
-			<div class="container">
-         <div class="navbar-header">
-      <a href="../index.html" class="navbar-brand">CHRISTIAN NGUYEN | FRONT END DEVELOPER</a>
+      <div class="container">
+        <div class="navbar-header">
+          <a href="../index.html" class="navbar-brand">CHRISTIAN NGUYEN | FRONT END DEVELOPER</a>
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          </div>
-          
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="navbar-collapse">
-				<ul class="nav navbar-nav navbar-right">
-      <li><a href="../index.html#about-me" id="about-me-div">ABOUT</a></li>
-      <li><a href="../index.html#project-wrapper" id="projects-div">PROJECTS</a></li>
-      <li><a href="#">BLOG</a></li>
-      <li><a href="../index.html#contact-wrapper"id="contacts-div">CONTACT</a></li>
-    </ul>
-		</div>
-  </div>
-		</nav>
-</header>
+        </div>
 
-<!-- Blog Home Content -->
-<!--<div class="padding">
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="../index.html#about-me" id="about-me-div">ABOUT</a></li>
+                        <li><a href="../index.html#project-wrapper" id="projects-div">PROJECTS</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="../index.html#contact-wrapper" id="contacts-div">CONTACT</a></li>
+                    </ul>
+                </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Blog Home Content -->
+  <!--<div class="padding">
 </div>
 <div class="blog-img">
   <h1> Blog</h1>
 </div>-->
-<div class="container-fluid" id="blog-content">
-    <div class="col-sm-12 ">
-      <p id="blog-title"> Flexbox, maybe not as complicated as I thought.</p> 
-      <p id="blog-date"> 3/13/2017</p>
+  <div class="container-fluid" id="blog-content">
+    <div class="col-sm-10 col-sm-offset-2 ">
+      <p id="blog-title"> flexbox is pretty cool.</p>
+      <p id="blog-date"> 3/11/2017</p>
     </div>
-    <div class="col-sm-6" id="blog-writing">
-      <p> Flexbox</p>
+    <div class="col-sm-8 col-sm-offset-2" id="blog-writing">
+      <p> Another powerful way to create CSS grids and layouts is by using flexbox. I haven't gotten good at flexbox yet but
+        it's something that I defintely want to know really well. Some resources that I have found to be pretty helpful and
+        fun are:
+      </p>
+      <ul>
+          <li><a href="http://www.flexboxdefense.com/" target="_blank">flexbox defense</a></li>
+          <li><a href="http://www.flexboxfroggy.com/" target="_blank">flexbox froggy</a></li>
+          <li><a href="https://medium.freecodecamp.com/an-animated-guide-to-flexbox-d280cf6afc35#.d46kd2yi5" target="_blank">medium guide #1</a></li>
+          <li><a href="https://medium.freecodecamp.com/even-more-about-how-flexbox-works-explained-in-big-colorful-animated-gifs-a5a74812b053"
+              target="_blank">medium guide #2</a></li>
+          <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">css-tricks</a></li>
+        </ul>
+        <p>
+          Flexbox works on most browsers except for IE. It's also somewhat buggy on certain browsers such as Firefox but it's not a huge issue. All of these guides and tutorials
+          are really useful if you want to learn flexbox. The visual aid helps a lot with understand how the container or items are displayed. I'll eventually get to learning flexbox and master it by creating some basic website that utilizes 
+          only flexbox. Some ideas come in to mind such as a card layout or maybe even a similiar game to flexboxfroggy and flexboxdefense. These tutorials basically act as a puzzle and makes learning much more interesting.
+        </p>
+        <p> I'm hoping to get back and update this blog post on what I learn about flexbox and when I actually create something using it. Until then this will suffice. Pretty short and sweet I guess.
+          If you're learning or plan on learning to use flexbox check out the links I posted above! 
+        </p>
     </div>
-</div>
+  </div>
 
 
 
 
- <!-- Footer -->
-  <div class="container-fluid navbarfixed-bottom" id="footer">
+  <!-- Footer -->
+  <div class="container-fluid" id="footer">
     <div class="row">
       <div class="col-sm-12" id="social-media">
         <ul>
           <li>
-           <a href="#">
+           <a href="https://www.linkedin.com/in/christian-nguyen-665487139/" target="_blank">
               <img src="../assets/linkedin.svg" alt="linkedin">
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="https://github.com/christiannguyen" target="_blank">
               <img src="../assets/github.svg" alt="github">
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="http://codepen.io/christiancn7/" target="_blank">
               <img src="../assets/codepen-icon.svg" alt="codepen">
             </a>
           </li>
         </ul>
         <div class="resume-copyright">
-        <a href="#"> RESUME</a>
+        <a href="../assets/resume.pdf" target="_blank"> RESUME</a>
         <p> © 2017 Christian Nguyen. All Rights Reserved.</p>
         </div>
       </div>
     </div>
   </div>
-  
+
 
   <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
