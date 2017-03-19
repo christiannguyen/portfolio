@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Muli|Lato|Source+Sans+Pro|Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Muli|Lato|Open+Sans|Source+Sans+Pro");
 
 $nav-color: #f0f0f0;
 $contact-color: #f0f0f0;
@@ -7,6 +7,7 @@ $background-color2: #FCFCFC;
 $blue-color: #0078A0;
 $footer-color: #2978A0;
 $blog-title-color: #a8a8a8;
+$blog-desc-color: #474747;
 
 * {
   margin: 0;
@@ -74,46 +75,9 @@ header.navigation {
     }
     }
 }
-// .displayed{
-//     background-color: $nav-color;
-//     transition: all 0.5s ease-in;
-//     .navbar-brand{
-//         opacity: 1;
-//         transition: all 0.5s ease-in;
-//     }
-//     .navbar-nav > li > a {
-//         opacity: 1;
-//         visibility: visible;
-//         transition: all 0.5s ease-in;
-//     }
-//     .navbar-toggle{
-//       opacity: 1;
-//       visibility: visible;
-//       transition: all 0.5s ease-in;
-//     }
-//     #navbar-collapse{
-//       visibility: visible;
-//       opacity: 1;
-//       transition: all 0.5s ease-in;
-//     }
-// }
+
 }
 
-/* ---------------Blog content------------ */
-  // .padding{
-  //   padding-top: 30px;
-  // }
-  // .blog-img {
-  //   height: 55vh;
-  //   background:
-  //     linear-gradient(
-  //       rgba(0, 0, 0, 0.1), 
-  //       rgba(0, 0, 0, 0.1)
-  //     ),url(../assets/blog-pic.jpg);
-  //   background-size: cover; 
-  //   background-repeat: no-repeat;
-  //   background-position: center;
-  // }
 #blog-content{
     padding-top: 50px;
     background-color: $background-color2;
@@ -146,12 +110,14 @@ header.navigation {
       }
       h3{
         color: $blog-title-color;
-        font: 1.3em 'Open Sans', sans-serif;
+        font: 1.3em 'Source Sans Pro', sans-serif;
         margin: 3px 0;
       }
     }
     .description{
-      font: 1.25em 'Lato', sans-serif;
+      color: $blog-desc-color;
+      font: 1.25em 'Open Sans', sans-serif;
+      font-weight: 500;
       padding: 0;
       p{
       padding: 1.5% 0;

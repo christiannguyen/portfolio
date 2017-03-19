@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Muli|Lato|Source+Sans+Pro|Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Muli|Lato|Playfair+Display|Source+Sans+Pro|Open+Sans");
 * {
   margin: 0;
   padding: 0;
@@ -102,7 +102,7 @@ header.navigation {
 
 #intro .intro-info h1 {
   text-align: center;
-  font-size: 5.1em;
+  font-size: 6.5em;
   font-weight: 1100;
   font-family: 'Lato', sans-serif;
   letter-spacing: 2px; }

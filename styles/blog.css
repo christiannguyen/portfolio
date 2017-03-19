@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Muli|Lato|Source+Sans+Pro|Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Muli|Lato|Open+Sans|Source+Sans+Pro");
 * {
   margin: 0;
   padding: 0;
@@ -50,7 +50,6 @@ header.navigation {
         cursor: pointer;
         opacity: 0.5; }
 
-/* ---------------Blog content------------ */
 #blog-content {
   padding-top: 50px;
   background-color: #FCFCFC;
@@ -80,10 +79,12 @@ header.navigation {
           color: #0078A0; }
       #blog-content .blog-post .title-date h3 {
         color: #a8a8a8;
-        font: 1.3em 'Open Sans', sans-serif;
+        font: 1.3em 'Source Sans Pro', sans-serif;
         margin: 3px 0; }
     #blog-content .blog-post .description {
-      font: 1.25em 'Lato', sans-serif;
+      color: #474747;
+      font: 1.25em 'Open Sans', sans-serif;
+      font-weight: 500;
       padding: 0; }
       #blog-content .blog-post .description p {
         padding: 1.5% 0; }

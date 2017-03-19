@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Christian Nguyen - Frontend Developer </title>
+    <link rel="stylesheet" type="text/css" href="../styles/gulp-blog.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon2.ico" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header class="navigation">
+        <nav class="navbar navbar-default navbar-static-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="../index.html" class="navbar-brand">CHRISTIAN NGUYEN | FRONT END DEVELOPER</a>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="../index.html#about-me" id="about-me-div">ABOUT</a></li>
+                        <li><a href="../index.html#project-wrapper" id="projects-div">PROJECTS</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="../index.html#contact-wrapper" id="contacts-div">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid" id="blog-content">
+        <div class="col-sm-10 col-sm-offset-2 ">
+            <p id="blog-title"> gulp, automate this automate that automate everything.</p>
+            <p id="blog-date"> 3/19/2017</p>
+        </div>
+        <div class="col-sm-8 col-sm-offset-2" id="blog-writing">
+            <p> Gulp is a very powerful tool that will make life a lot easier for developers. I just recently started looking
+                into gulp and it has already helped me save time. Simple tasks such as refreshing a browser shouldn't be
+                complained about but having a tool do that for you just makes things easier and more efficient. One thing
+                that it has helped me tremendously on is sass preprocessing. I used to use a sass preprocessor tool called
+                <i>Prepos</i> but it kept bugging me every like 5 minutes to buy the full version. I eventually got fed up
+                with this and decided to see what the big I'll help you guys get started on using gulp and to simply automate
+                what I have automated (which isn't too much yet to be honest) deal was about gulp. After using the very basic
+                commands and understanding what gulp was about I finally understand the power of it.
+            </p>
+            <p>
+                Firstly, make sure you have node.js instead. If not, head over to <a href="https://nodejs.org/en/" target="_blank">Node.js</a>                download it and become familiar with its commands. Head over to your project root folder in your command
+                line and use these commands.
+            </p>
+
+            <p class="code-example">
+                npm init<br> npm install gulp -g <br> npm install gulp --save-dev
+            </p>
+            <p> Next, you'll want to create a gulpfile.js within the root of your folder. Here's how a basic gulpfile.js will
+                look like.</p>
+            <p class="code-example">
+                var gulp = require('gulp');<br><br> gulp.task('default', function() { <br> &ensp;// place code for your default
+                task here <br> });
+            </p>
+            <p> After setting up the gulp file we'll want to automate some simple tasks. Personally, I use SASS and preprocess
+                it with gulp so for the sake of this blog I'll use that as an example. Here's how you would set up sass for
+                gulp.
+            </p>
+            <p class="code-example"> npm install gulp-sass --save-dev</p>
+            <p> Within the gulpfile you'll also want to require sass too like you did with require('gulp'). You'll also want
+                to create a task for sass by doing the following.
+            </p>
+            <p class="code-example">
+                var sass = require('sass');<br><br> gulp.task('sass', function() { <br> return gulp.src('source-file')<br>                &ensp;&ensp;.pipe(sass()) <br> &ensp;&ensp;.pipe(gulp.dest('destination-file') <br> });
+            </p>
+            <p> The code is very simple. The src method is where the scss file are located. The destination file is the folder
+                where the output css file will be created. My source file is my scss/example.scss. My destination file would
+                then be my css folder or 'styles'. If you only have one file to prepocess then you can just use target that
+                one file. However, there will most likely be multiple files so you'll want to select all of the scss files.
+                You can do so by doing this.
+            </p>
+            <p class="code-example"> gulp.src('scss/**/*.scss').</p>
+            <p> To explain more in-depth, globs in node are used to match patterns for files. We'll mainly use 4 different patterns.
+                <ol>
+                    <li> <span style="font-size: 25px; background-color: gainsboro">*</span>: This pattern is used to match any pattern in the
+                    current directory. In this case, we'll use *.scss to match any files that contain the ".scss" tag.</li>
+                    <li> <span style="font-size: 25px; background-color: gainsboro">**/*</span>: This pattern is used to match any pattern in the
+                    root folders and all of its children folders. This is similar to the pattern 1.</li>
+                    <li> <span style="font-size: 25px; background-color: gainsboro">*.+(example1|example2)</span>: This pattern allows you to match multiple
+                    patterns, which is separated by the | character. This uses the + and () characters. This will match any file ending with example1 or example2 in the root folder.</li>
+                    <li> <span style="font-size: 25px; background-color: gainsboro">!</span>: This pattern is used to match any pattern in the
+                    current directory. In this case, we'll use *.scss to match any files that contain the ".scss" tag.</li>
+                </ol>
+            </p>
+            <p> This works fine now. However, you don't want to keep running gulp sass to use sass. This is where the automation comes in. Next, you'll make a 
+                watch function that will watch for changes in your files.
+            </p>
+            <p class="code-example">
+                gulp.task('watch', function(){<br>
+                gulp.watch('scss/*.scss', ['sass']); <br>
+                })
+            </p>
+            <p> The code above is simple. Gulp will watch for changes in the source folder containing the pattern '.scss'. The ['sass] part after is to tell gulp
+                what tasks to watch run. It can be thought of like this gulp.watch('files-to-watch-for', ['tasks-to-run']);. In this case, it looked for all the changes on my .scss files
+                within my scss folder. It also ran the sass function/task on those changes. 
+            </p>
+            <p> That's all! This is very basic and I only covered a basic task and how to watch for changes. There are many others to learn about and will be very useful to learn!</p>
+            <p> Heres how my code looks like at the end. It's preprocessing sass while automatically reloading the browser when I update my css or html files.</p>            
+            <p class="code-example"> 
+                var gulp = require('gulp');<br>
+                 var sass = require('gulp-sass');<br> 
+                 var browserSync = require('browser-sync').create(); <br><br>
+                gulp.task('sass', function() { <br>
+                    return gulp.src('scss/**/*.scss') <br>
+                    &ensp;&ensp;.pipe(sass())<br>
+                    &ensp;&ensp;.pipe(gulp.dest('styles'))
+                .pipe(browserSync.reload({ stream: true }));<br>
+                 });<br>
+                  gulp.task('watch',['browserSync', 'sass'],
+                function(){ <br>
+                &ensp;&ensp;gulp.watch('scss/**/*.scss', ['sass']);<br>
+                 &ensp;&ensp;gulp.watch('*.html').on('change',browserSync.reload);<br>
+                 &ensp;&ensp;gulp.watch('blogs/*.html').on('change',browserSync.reload);<br>
+                  });<br>
+                gulp.task('browserSync', function(){<br>
+                 &ensp;&ensp;browserSync.init({ <br>
+                 server:{ baseDir: "./" } <br>
+                 }); <br>
+                 });
+            </p>
+
+        </div>
+    </div>
+
+
+
+
+    <!-- Footer -->
+    <div class="container-fluid" id="footer">
+        <div class="row">
+            <div class="col-sm-12" id="social-media">
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/christian-nguyen-665487139/" target="_blank">
+                            <img src="../assets/linkedin.svg" alt="linkedin">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/christiannguyen" target="_blank">
+                            <img src="../assets/github.svg" alt="github">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://codepen.io/christiancn7/" target="_blank">
+                            <img src="../assets/codepen-icon.svg" alt="codepen">
+                        </a>
+                    </li>
+                </ul>
+                <div class="resume-copyright">
+                    <a href="../assets/resume.pdf" target="_blank"> RESUME</a>
+                    <p> © 2017 Christian Nguyen. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>

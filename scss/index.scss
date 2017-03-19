@@ -1,16 +1,15 @@
-@import url("https://fonts.googleapis.com/css?family=Muli|Lato|Source+Sans+Pro|Open+Sans");
-
+@import url("https://fonts.googleapis.com/css?family=Muli|Lato|Playfair+Display|Source+Sans+Pro|Open+Sans");
 $nav-color: #f0f0f0;
 $contact-color: #f0f0f0;
 $background-color: #F9FFF2;
 $background-color2: #FCFCFC;
 $blue-color: #0078A0;
 $footer-color: #2978A0;
-
 * {
   margin: 0;
   padding: 0;
-  border: 0; }
+  border: 0;
+}
 
 header.navigation {
   padding: 0;
@@ -18,14 +17,14 @@ header.navigation {
   position: fixed;
   width: 100%;
   z-index: 5;
-.navbar-default{
+  .navbar-default {
     margin: 0;
     z-index: 5;
     border: none;
     border-radius: 0;
     background-color: transparent;
     transition: all 0.5s ease-in;
-    #navbar-collapse{
+    #navbar-collapse {
       visibility: hidden;
       opacity: 0;
       transition: all 0.5s ease-in;
@@ -37,82 +36,77 @@ header.navigation {
       padding: 9px 0;
       opacity: 0;
       transition: all 0.4s ease-out;
-      &:focus{
+      &:focus {
         background: none;
       }
-      &:hover{
+      &:hover {
         background: none;
       }
     }
     .navbar-brand {
-        opacity: 0;
-        padding: 15px 0;
-        color: #000000;
-        letter-spacing: 1.1px;
-        font-weight: 1000;
-        font: 1.05em 'Lato', sans-serif;
-        margin-left: 0;
-        transition: all 0.4s ease-out;
-        &:hover{
-          opacity: 0.5;
-        }
+      opacity: 0;
+      padding: 15px 0;
+      color: #000000;
+      letter-spacing: 1.1px;
+      font-weight: 1000;
+      font: 1.05em 'Lato', sans-serif;
+      margin-left: 0;
+      transition: all 0.4s ease-out;
+      &:hover {
+        opacity: 0.5;
+      }
     }
-    .navbar-nav{
-        margin-right: 0;
+    .navbar-nav {
+      margin-right: 0;
     }
-    .navbar-nav > li > a {
-    visibility: hidden;
-    color: #000000;
-    opacity: 0;
-    font-weight: 1000;
-    font: 1em 'Lato', sans-serif;   
-    transition: all 0.4s ease-out;
-    &:hover{
-      transition: all 0.4s ease;
-      cursor: pointer;
-      opacity: 0.5; 
+    .navbar-nav>li>a {
+      visibility: hidden;
+      color: #000000;
+      opacity: 0;
+      font-weight: 1000;
+      font: 1em 'Lato', sans-serif;
+      transition: all 0.4s ease-out;
+      &:hover {
+        transition: all 0.4s ease;
+        cursor: pointer;
+        opacity: 0.5;
+      }
     }
-}
-}
-.displayed{
+  }
+  .displayed {
     background-color: $nav-color;
     transition: all 0.5s ease-in;
-    .navbar-brand{
-        opacity: 1;
-        transition: all 0.5s ease-in;
+    .navbar-brand {
+      opacity: 1;
+      transition: all 0.5s ease-in;
     }
-    .navbar-nav > li > a {
-        opacity: 1;
-        visibility: visible;
-        transition: all 0.5s ease-in;
-    }
-    .navbar-toggle{
+    .navbar-nav>li>a {
       opacity: 1;
       visibility: visible;
       transition: all 0.5s ease-in;
     }
-    #navbar-collapse{
+    .navbar-toggle {
+      opacity: 1;
+      visibility: visible;
+      transition: all 0.5s ease-in;
+    }
+    #navbar-collapse {
       visibility: visible;
       opacity: 1;
       transition: all 0.5s ease-in;
     }
+  }
 }
-}
-
-
 
 #intro {
- position: relative;
- overflow: hidden;
- height: 100vh;
- padding: 0;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  padding: 0;
 }
+
 #intro:before {
-  background:
-    linear-gradient(
-      rgba(0, 130, 160, 0.4), 
-      rgba(0, 130, 160, 0.4)
-    ),url(../assets/1.jpg);
+  background: linear-gradient( rgba(0, 130, 160, 0.4), rgba(0, 130, 160, 0.4)), url(../assets/1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -125,30 +119,36 @@ header.navigation {
 }
 
 #intro #name {
-  color: #000000; }
+  color: #000000;
+}
 
-#intro .intro-info{
+#intro .intro-info {
   position: relative;
   top: 30vh;
 }
+
 #intro .intro-info h1 {
   text-align: center;
-  font-size: 5.1em;
+  font-size: 6.5em;
   font-weight: 1100;
   font-family: 'Lato', sans-serif;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+}
 
-#intro .intro-info  h2 {
+#intro .intro-info h2 {
   text-align: center;
   font-size: 2em;
   font-weight: 700;
   font-family: 'Lato', sans-serif;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+}
 
 
 /* --------- about me -------- */
+
 #about-me {
-  background-color: $background-color2; }
+  background-color: $background-color2;
+}
 
 #about-me h2 {
   border-bottom: 3px solid black;
@@ -157,56 +157,64 @@ header.navigation {
   font-size: 3.5em;
   font-weight: 600;
   font-family: 'Lato', sans-serif;
-  letter-spacing: 1.3px; }
+  letter-spacing: 1.3px;
+}
 
 #about-me .row {
   margin-left: 0;
-  margin-right: 0; }
+  margin-right: 0;
+}
 
 #about-me .about-me-wrapper {
   margin-top: 3%;
-  margin-bottom: 15.5%; }
+  margin-bottom: 15.5%;
+}
 
 #about-me #info-me {
   padding-left: 10%;
-  line-height: 250%; }
+  line-height: 250%;
+}
 
 #about-me #info-me h3 {
   font-family: 'Lato', sans-serif;
   font-size: 4em;
   color: $blue-color;
   font-weight: 600;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+}
 
 #about-me #info-me p {
   padding-top: 2%;
   font-size: 1.7em;
   font-weight: 400;
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+}
 
 #about-me #info-me ul {
-  list-style-type: none; }
+  list-style-type: none;
+}
 
 #about-me #info-skills #skills-header {
   padding: 0;
-  font-family: 'Lato', sans-serif; }
+  font-family: 'Lato', sans-serif;
+}
 
 #about-me #info-skills #skills-header h4 {
   padding-top: 12%;
   font-size: 3em;
   color: $blue-color;
-  font-weight: 600; }
+  font-weight: 600;
+}
 
 #about-me #info-skills #skills-list {
-   padding: 10px 0 0 0; 
-  }
+  padding: 10px 0 0 0;
+}
 
 #about-me #info-me ul li {
   display: inline-block;
-
   padding: 5px 10px;
   img {
-  fill: red;
+    fill: red;
     display: inline;
     height: 70px;
     width: 100px;
@@ -215,252 +223,299 @@ header.navigation {
 
 #about-me #picture-me {
   padding-left: 0;
-  padding-right: 2%; }
+  padding-right: 2%;
+}
 
 #about-me #picture-me img {
-  width: 100%; }
+  width: 100%;
+}
+
 
 /* ---------- projects css ---------- */
+
 #project-wrapper {
-  background-color: #FCFCFC; }
-  #project-wrapper h2 {
-    margin-top: 4%;
-    margin-bottom: 3.5%;
-    font-size: 3.5em;
-    letter-spacing: 1.3px;
-    font-weight: 600;
-    font-family: 'Poppins', sans-serif;
-    border-bottom: 3px solid black;
-    padding-bottom: 3px; }
-  #project-wrapper .row {
-    margin-top: 0.5%;
-    margin-left: 0;
-    margin-right: 0; }
-    #project-wrapper .row img {
-      width: 100%;
-      height: 375px;
-      margin-top: 3px;
-      margin-bottom: 3px; }
-  #project-wrapper .projects-background {
-    margin-bottom: 10%; }
-    #project-wrapper .projects-background .grid {
-      border: 1px solid #D6DBD0;
-      border-radius: 5px;
-      background-color: #FFFFFF;
-      margin-bottom: 1.5%; }
-      #project-wrapper .projects-background .grid #project-info h2 {
-        font-family: 'Muli', sans-serif;
-        font-size: 270%;
-        font-weight: 600;
-        padding: 1.5% 0;
-        letter-spacing: 1.1px; }
-      #project-wrapper .projects-background .grid #project-info h4 {
-        font-family: 'Muli', sans-serif;
-        letter-spacing: 1.2px; }
-      #project-wrapper .projects-background .grid #project-info p {
-        padding-top: 5%;
-        font: 1.3em 'Open Sans', sans-serif;
-        line-height: 1.4; }
-        #project-wrapper .projects-background .grid #project-picture{
-          img{
-            padding-top: 7.5%;
-          }
-        }
-      #project-wrapper .projects-background .grid #project-picture a {
-        text-decoration: none;
-        padding: 3px;
-       }
-        #project-wrapper .projects-background .grid #project-picture a .myButton {
-          font-family: 'Open Sans', sans-serif;
-          margin-bottom: 15px;
-          padding: 10px;
-          border: 1px solid #d3d3d3;
-          border-radius: 5px;
-          font-size: 1.2em;
-          font-weight: 600;
-          color: #000000;
-          transition: all 0.5s ease; }
-        #project-wrapper .projects-background .grid #project-picture a :hover {
-          background-color: #2292A4;
-          color: #FFFFFF;
-           transition: all 0.5s ease; }
+  background-color: #FCFCFC;
+}
+
+#project-wrapper h2 {
+  margin-top: 4%;
+  margin-bottom: 3.5%;
+  font-size: 3.5em;
+  letter-spacing: 1.3px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  border-bottom: 3px solid black;
+  padding-bottom: 3px;
+}
+
+#project-wrapper .row {
+  margin-top: 0.5%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#project-wrapper .row img {
+  width: 100%;
+  height: 375px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+#project-wrapper .projects-background {
+  margin-bottom: 10%;
+}
+
+#project-wrapper .projects-background .grid {
+  border: 1px solid #D6DBD0;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  margin-bottom: 1.5%;
+}
+
+#project-wrapper .projects-background .grid #project-info h2 {
+  font-family: 'Muli', sans-serif;
+  font-size: 270%;
+  font-weight: 600;
+  padding: 1.5% 0;
+  letter-spacing: 1.1px;
+}
+
+#project-wrapper .projects-background .grid #project-info h4 {
+  font-family: 'Muli', sans-serif;
+  letter-spacing: 1.2px;
+}
+
+#project-wrapper .projects-background .grid #project-info p {
+  padding-top: 5%;
+  font: 1.3em 'Open Sans', sans-serif;
+  line-height: 1.4;
+}
+
+#project-wrapper .projects-background .grid #project-picture {
+  img {
+    padding-top: 7.5%;
+  }
+}
+
+#project-wrapper .projects-background .grid #project-picture a {
+  text-decoration: none;
+  padding: 3px;
+}
+
+#project-wrapper .projects-background .grid #project-picture a .myButton {
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #000000;
+  transition: all 0.5s ease;
+}
+
+#project-wrapper .projects-background .grid #project-picture a :hover {
+  background-color: #2292A4;
+  color: #FFFFFF;
+  transition: all 0.5s ease;
+}
+
 
 /* ---------------Contact Form ---------- */
-    #contact-wrapper{
-      padding: 0;
-      padding: 0 10%;
-      background-color: $background-color2; 
-      height: 100%;
-      h3 {
-        text-align: center;
-        margin: 50px 0;
-        color: $blue-color;
-        font: 2.8em 'Open Sans', sans-serif;
-      }
-      .input {
-        margin-top: 30px;
-        :focus{
-          outline: none;
-        }
-      }
-      #name {
-        padding: 0;
-        font: 1.8em 'Lato', sans-serif;
-        width: 100%;
-        padding-bottom: 5px;
-        background-color: $background-color2;
-        border-bottom: 3px solid $blue-color;
-      }
-      #email{
-        padding: 0;
-        padding-bottom: 5px;
-        font: 1.8em 'Lato', sans-serif;
-        border-bottom: 3px solid $blue-color;
-        width: 100%;
-        background-color: $background-color2;
-      }
-      #message {
-        font: 1.8em 'Lato', sans-serif;
-        border-bottom: 3px solid $blue-color;
-        margin-top: 35px;
-        width: 100%;
-        // height: 50px;  
-        background-color: $background-color2;
-        resize: none;
-        &:focus{
-          outline: none;
-        }
-        }
-      #send {
-        background-color: $contact-color;
-        text-align: center;
-        width: 100%;
-        margin: 50px 0;
-        padding: 20px 0;
-        color: #0078A0;
-        font: 2em 'Lato', sans-serif;
-        border: 3px solid #0078A0;
-        transition: all 0.5s ease;
-        
-        &:hover{
-          color: #FFFFFF;
-          background-color: #0078A0;
-          transition: all 0.5s ease;
-        }
-        &:invalid{
-          background: red;
-        }
-      }
-    p{
-      font: 1.8em 'Open Sans', sans-serif;
-      color: $blue-color;
-      font-weight: 500;
-      text-align: center;
-      transition: all 0.5s ease-in;
-      margin-bottom: 40px;
+
+#contact-wrapper {
+  padding: 0;
+  padding: 0 10%;
+  background-color: $background-color2;
+  height: 100%;
+  h3 {
+    text-align: center;
+    margin: 50px 0;
+    color: $blue-color;
+    font: 2.8em 'Open Sans', sans-serif;
+  }
+  .input {
+    margin-top: 30px;
+     :focus {
+      outline: none;
     }
-      }
-    
-/* ---------------Footer ------------ */
-#footer {
-  background-color: black;
-  width: 100%; 
-  .resume-copyright{
+  }
+  #name {
+    padding: 0;
+    font: 1.8em 'Lato', sans-serif;
+    width: 100%;
+    padding-bottom: 5px;
+    background-color: $background-color2;
+    border-bottom: 3px solid $blue-color;
+  }
+  #email {
+    padding: 0;
+    padding-bottom: 5px;
+    font: 1.8em 'Lato', sans-serif;
+    border-bottom: 3px solid $blue-color;
+    width: 100%;
+    background-color: $background-color2;
+  }
+  #message {
+    font: 1.8em 'Lato', sans-serif;
+    border-bottom: 3px solid $blue-color;
+    margin-top: 35px;
+    width: 100%;
+    // height: 50px;  
+    background-color: $background-color2;
+    resize: none;
+    &:focus {
+      outline: none;
+    }
+  }
+  #send {
+    background-color: $contact-color;
     text-align: center;
-    margin-top: 3px;
-  a {
-    color: white;
-    font-size: 1.35em;
-    font-family: 'Lato', sans-serif;
-    text-align: center;
-    letter-spacing: 1.3px;
-    text-decoration: none;
-     transition: all 0.5s ease;
-    &:hover{
-      color: $footer-color;
+    width: 100%;
+    margin: 50px 0;
+    padding: 20px 0;
+    color: #0078A0;
+    font: 2em 'Lato', sans-serif;
+    border: 3px solid #0078A0;
+    transition: all 0.5s ease;
+    &:hover {
+      color: #FFFFFF;
+      background-color: #0078A0;
       transition: all 0.5s ease;
     }
+    &:invalid {
+      background: red;
+    }
   }
-  p{
-    font-size: 1.25em;
-    font-family: 'Lato', sans-serif;
-    color: #FFFFFF;
+  p {
+    font: 1.8em 'Open Sans', sans-serif;
+    color: $blue-color;
+    font-weight: 500;
     text-align: center;
-    letter-spacing: 0.8px;
-    margin-bottom: 15px;
+    transition: all 0.5s ease-in;
+    margin-bottom: 40px;
   }
-  }}
-  #footer #social-media ul {
-    list-style-type: none;
+}
+
+
+/* ---------------Footer ------------ */
+
+#footer {
+  background-color: black;
+  width: 100%;
+  .resume-copyright {
     text-align: center;
-    margin: 0;
-    margin-top: 10px; }
-    #footer #social-media ul li {
-      display: inline-block;
-      font-size: 3.2em;
-      font-weight: 700; 
-      padding: 0 15px; }
-      #footer #social-media ul li a img {
-        color: #E4E3EF;
-        height: 50px;
-        width: 50px;
-         transition: all 0.5s ease; }
-      #footer #social-media ul li a img:hover {
-        fill: $footer-color;
-        opacity: 0.7;
+    margin-top: 3px;
+    a {
+      color: white;
+      font-size: 1.35em;
+      font-family: 'Lato', sans-serif;
+      text-align: center;
+      letter-spacing: 1.3px;
+      text-decoration: none;
+      transition: all 0.5s ease;
+      &:hover {
+        color: $footer-color;
         transition: all 0.5s ease;
       }
-        // -webkit-transform: scale(1.15);
-        // -ms-transform: scale(1.15);
-        // transform: scale(1.15); }
-  #footer #contact-form {
-    color: #E4E3EF;
-    text-align: center;
-    display: inline;
-    font-family: 'Montserrat', sans-serif; }
-    #footer #contact-form h4 {
-      font-size: 200%;
-      font-weight: 600;
-      margin-top: 0;
-      text-align: center; }
-    #footer #contact-form p {
-      font-size: 160%;
-      font-weight: 600;   
-      letter-spacing: 1.3px; } 
+    }
+    p {
+      font-size: 1.25em;
+      font-family: 'Lato', sans-serif;
+      color: #FFFFFF;
+      text-align: center;
+      letter-spacing: 0.8px;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+#footer #social-media ul {
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  margin-top: 10px;
+}
+
+#footer #social-media ul li {
+  display: inline-block;
+  font-size: 3.2em;
+  font-weight: 700;
+  padding: 0 15px;
+}
+
+#footer #social-media ul li a img {
+  color: #E4E3EF;
+  height: 50px;
+  width: 50px;
+  transition: all 0.5s ease;
+}
+
+#footer #social-media ul li a img:hover {
+  fill: $footer-color;
+  opacity: 0.7;
+  transition: all 0.5s ease;
+}
+
+// -webkit-transform: scale(1.15);
+// -ms-transform: scale(1.15);
+// transform: scale(1.15); }
+#footer #contact-form {
+  color: #E4E3EF;
+  text-align: center;
+  display: inline;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#footer #contact-form h4 {
+  font-size: 200%;
+  font-weight: 600;
+  margin-top: 0;
+  text-align: center;
+}
+
+#footer #contact-form p {
+  font-size: 160%;
+  font-weight: 600;
+  letter-spacing: 1.3px;
+}
+
 
 /* -------------- Media Queries ---------------*/
 
- 
 @media screen and (max-width: 576px) {
   #intro h1 {
-    font-size: 700%; }
+    font-size: 700%;
+  }
   #intro h2 {
-    font-size: 200%; }
+    font-size: 200%;
+  }
   #intro #directory {
-    font-size: 225%; }
-  header.navigation .navbar-default .navbar-brand{
+    font-size: 225%;
+  }
+  header.navigation .navbar-default .navbar-brand {
     font-size: 0.7em;
     margin: 0;
     letter-spacing: 1.1px;
     line-height: 20px;
-  } 
-  body > header > nav > div > div.navbar-header > button {
+  }
+  body>header>nav>div>div.navbar-header>button {
     margin-right: 5px !important;
-  } 
-  #footer .resume-copyright p{
+  }
+  #footer .resume-copyright p {
     font-size: 1.02em;
   }
-  #intro .intro-info h1{
+  #intro .intro-info h1 {
     line-height: 80px;
     font-size: 4.5em;
   }
-  #intro .intro-info h2{
+  #intro .intro-info h2 {
     font-size: 1.0em;
   }
 }
 
-@media screen and (max-width: 768px){
-    #project-picture > div {
+@media screen and (max-width: 768px) {
+  #project-picture>div {
     text-align: center;
   }
 }
